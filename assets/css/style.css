@@ -1,5 +1,9 @@
 @import url('commons.css');
 
+html {
+    font-size: 16px;
+}
+
 .logo h1 {
     font-family: "";
     font-weight: 400;
@@ -36,29 +40,39 @@ header {
 }
 
 
-.menu{
+.menu {
     display: none;
 }
+
 /* 헤더 끝 */
 
 
 
 /* 1섹션 시작 kv */
-.kv{
+.kv {
     background-image: url(../images/kv/bg.webp);
     background-repeat: no-repeat;
     height: auto;
     display: flex;
     justify-content: center;
+    background-position: center;
+    background-size: cover;
 }
 
 
-.content{
-    width: 81.25rem;
+.kv-content {
     display: flex;
     align-items: center;
     padding: 2.688rem 0;
+    gap: 4rem;
     justify-content: space-between;
+}
+
+.kv-textbox {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: start;
 }
 
 .kv-cta {
@@ -72,38 +86,121 @@ header {
     gap: 3.125rem;
 }
 
+.kv-title h1 {
+    font-size: 7.813rem;
+    font-weight: 700;
+    font-family: 'Pretendard';
+    background: linear-gradient(to top, #f6ffb4, #fff);
+    line-height: normal;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
-/* 반응형 */
-@media (max-width:1280px) {
-    
+.kv-title h2 {
+    font-size: 6.25rem;
+    font-weight: 700;
+    font-family: 'Pretendard';
+    background: linear-gradient(to top, #6DFDF0, #fff);
+    line-height: normal;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.kv-model{
+    width: 46.438rem;
 }
 
 
-@media (max-width:768px) {
-    /* 헤더-시작 */
-    .menu{
+
+
+
+/* 반응형 */
+@media (max-width:1280px) {
+    /* html {
+        font-size: 15px;
+    }
+
+    header {
+        padding: 0 16px;
+    }
+
+    .kv-content {
+        padding: 0 1rem;
+        display: flex;
+    } */
+}
+
+
+
+@media (max-width:860px) {
+    html{
+        font-size: 14px;
+    }
+
+    /* header 시작 */
+    .menu {
         display: block;
         cursor: pointer;
     }
-    .gnb{
+
+    .gnb {
         display: none;
-        
-    }
-    .nav{
-        padding: 0 1rem;
+
     }
 
+    /* kv 시작 */
+    .kv-content{
+        padding: 3rem 1.143rem;
+        display: flex;
+        flex-direction: column;
+        max-width: 23.125rem;
+    }
+    .kv-model{
+        max-width: 23.125rem;
+        height: auto;
+    }
+    .kv-title h1{
+        font-size: 3.5rem
+    }
+    .kv-title h2{
+        font-size: 2rem
+    }
+
+
+
+
+
+    /* html{
+        font-size: 13px;
+    } */
+
+    /* 헤더-시작 */
+
+
     /* kv-시작 */
-    .content{
+    /* .kv-content{
         flex-wrap: wrap;
+        gap: 1rem;
+        padding: 3rem 1.143rem;
+        
     }
 
 
     .kv-cta{
-        font-family: 'Pretendard';
-        font-size: 1rem;
-        font-weight: 400;
         padding: 0.313rem 0.625rem;
+        display: flex;
+        align-items: center;
+        gap: auto;
         
     }
+    .kv-cta img{
+        width: 0.75rem;
+        height: 0.375;
+    }
+
+    .kv{
+       display: flex;
+       align-items: center;
+    } */
+
 }

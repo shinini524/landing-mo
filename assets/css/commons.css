@@ -137,46 +137,4 @@ p {
 
 
 
-/* 모바일 폰트 가이드 */
-@media (max-width:768px) {
-    h1 {
-        font-family: 'Pretendard';
-        font-size: 2.5rem;
-        font-weight: 600;
-    }
 
-    /*  sb 40px */
-    h1 {
-        font-family: 'Pretendard';
-        font-size: 2.5rem;
-        font-weight: 600;
-    }
-
-    h2 {
-        font-family: 'Pretendard';
-        font-size: 1.5rem;
-        font-weight: 400;
-    }
-
-    /* r 24px */
-    h3 {
-        font-family: 'Pretendard';
-        font-size: 1.25rem;
-        font-weight: 600;
-    }
-
-    /* sb 20px */
-    h4 {
-        font-family: 'Pretendard';
-        font-size: 1rem;
-        font-weight: 400;
-    }
-    /* r 16px */
-    p {
-        font-family: 'Pretendard';
-        font-size: 0.75rem;
-        font-weight: 400;
-    }
-    /* r 12px */
-
-}
